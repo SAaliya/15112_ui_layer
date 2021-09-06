@@ -1,0 +1,18 @@
+// <button id="btn1" onclick="addHobby()">Add Hobby</button>
+// Binding Businness logic with your UI element called button
+
+function addHobby(){
+    // alert("Button click");
+    //1.1 read input:text hobby 
+    const hobby=document.getElementById("hobby");
+    //   1.2 access the ul hobbies
+    const hobbies=document.getElementById("hobbies");
+    //2 create li element
+    const li=document.createElement("li");
+    li.innerHTML=hobby.value;
+    //3 append it to the hobbies ul
+    hobbies.appendChild(li);
+
+    const div=document.getElementsByTagName("div");
+    console.log("No. of div element on page "+div.length);
+}
