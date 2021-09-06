@@ -1,0 +1,41 @@
+.multi-bg-example {
+    /* width: 100%;
+    height: 400px; */
+    background-image: url(../images/coc.png),
+      url(../images/pizza.png),
+      linear-gradient(to right, rgba(30, 75, 115, 2), rgba(226, 176, 176, 1));
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom right,left;
+    background-size: 190px 120px ;
+    width: 400px;
+    height: 500px;
+    border: 2px solid;
+    color: rgb(51, 61, 7);
+    text-shadow: white 0px 0px 2px;
+    font-size: 16px;
+  }
+/* Special values: "contain" and "cover" */
+  .bgSizeContain {
+    background-image: url(../images/pizza.png);
+    background-size: contain;
+    width: 160px;
+    height: 160px;
+    border: 2px solid;
+    color: red;
+    resize: both;
+    overflow: scroll;
+  }
+
+  .bgSizeCover {
+    background-image: url(../images/coc.png);
+    background-size: cover;
+    width: 160px;
+    height: 160px;
+    border: 2px solid;
+    color: yellowgreen;
+    resize: both;
+    overflow: scroll;
+  }
+  
+  
+  

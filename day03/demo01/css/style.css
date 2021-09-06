@@ -1,0 +1,94 @@
+/* Selector Type : body,header,footer,div */
+body{
+    background-color: #687864;
+    color:#f7f9fb;
+}
+header{
+    background-color: #317080;
+}
+
+header,div,footer{
+    border:solid 2px black;    
+    height: fit-content;
+    width: 100%;    
+}
+header,footer{
+    color:#683333;
+    text-align: center;
+    text-decoration: solid;
+
+}
+footer{
+    background-color: #317080;
+}
+
+div{
+    background-color: #8fc1e3;
+    display:flex;
+    /* margin:top right bottom left */
+    margin:0 5px 0 5px; 
+    padding:0 5px 0 5px; 
+    width: fit-content;
+}
+/* Child combinator */
+div >nav{
+    border:solid 1px red;
+    margin:2px;      
+}
+div >section{
+    border:solid 1px yellow;
+    margin:2px; 
+}
+nav{
+    text-align: justify;
+    margin:0px;
+    padding:0px;
+}
+/* Descendant combinator */
+nav ul{
+    padding-right: 5px;
+    /* text-align: center; */
+    width: fit-content;
+}
+nav ul li{
+    list-style: none;
+    /* text-align: center; */
+}
+/* section{
+    
+} */
+li:first-child{
+    color:#683333;
+    font-size: larger;
+    font-weight: bolder;
+}
+p::first-line{
+    color:#683333;
+    font-size: larger;
+    font-weight: bolder;
+}
+/* Adjacent sibling combinator */
+h3+p{
+    border:solid 2px green;
+}
+/* General sibling combinator */
+h3~p{
+    background-color: bisque;
+}
+#type{
+    border:solid 2px #683333;
+    margin:10px;
+}
+#id{
+    border:solid 2px magenta;
+    margin:10px;
+}
+#class{
+    border:solid 2px red;
+    margin:10px;
+}
+.h3_heading{
+    color:black;
+    font-size: larger;
+    text-decoration: solid;
+}
